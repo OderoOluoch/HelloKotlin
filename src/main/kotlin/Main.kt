@@ -1,9 +1,10 @@
 val name= "Odero";
 var greeting: String? =null
 fun main() {
-    println(greeting)
+    greeting = "Kiyanaaa"
+    when(greeting){
+        null -> println("Hi")
+        else -> println(greeting)
+    }
     println(name)
-
-    greeting = "Buudaa"
-    println(greeting)
 }
