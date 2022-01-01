@@ -1,11 +1,7 @@
-val name= "Odero";
-var greeting: String? =null
+fun getGreetings():String{
+    return "Hello from this function"
+}
 fun main() {
-    greeting="Kiongos"
-    val greetingToPrint = when(greeting){
-        null -> "Hello"
-        else -> greeting
-    }
-    println(greetingToPrint)
-    println(name)
+    println(getGreetings());
+
 }
