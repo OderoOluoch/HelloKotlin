@@ -3,7 +3,14 @@ fun sayHello(greeting :String,vararg itemsToGreet:String){
         println("$greeting $itemToGreet")
     }
 }
+
+fun greetPerson(greeting: String, name:String) = println("$greeting $name")
+
 fun main() {
-    val interestingThings = arrayOf("Koltin","Java", "Dart")
-    sayHello("hi", *interestingThings)
+    val person = Person()
+//    println(person.firstName)
+//    println(person.lastName)
+    person.printInfo()
+    person.nickName = "Chief"
+    person.printInfo()
 }
