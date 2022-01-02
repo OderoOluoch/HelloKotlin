@@ -1,7 +1,8 @@
-fun getGreetings():String{
-    return "Hello from this function"
-}
+fun sayHello(greeting :String, itemToGreet:String) =  println("$greeting $itemToGreet")
 fun main() {
-    println(getGreetings());
+    val interestingThings = listOf("Koltin","Java", "Dart")
+
+    val map = mapOf(1 to "a", 2 to "b", 3 to "c")
+    map.forEach { (key, value) -> println("$key -> $value") }
 
 }
